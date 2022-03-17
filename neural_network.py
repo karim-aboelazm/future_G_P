@@ -23,3 +23,4 @@ def bag_of_words(word_tokenize,words):
         if w in stm_word:
             bag[indx] = 1
     return bag
+

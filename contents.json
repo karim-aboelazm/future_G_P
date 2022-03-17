@@ -1,0 +1,14 @@
+{
+   "content":[
+       {
+           "tag":"greetings",
+           "patterns":["hello","welcome","hi","whats up","hay","python"],
+           "responses":["hello sir","how are you sir ?","how can i help?","how do you do sir?","hi sir"]
+       },
+       {
+            "tag":"bye",
+            "patterns":["bye","shut","goodbye","see you later","sleep","exit"],
+            "responses":["Bye","I am Going ..","Bye Sir","nice to meet you","see you later"]
+       }
+   ] 
+}

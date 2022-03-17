@@ -2,6 +2,7 @@
 # [2] torchversion >> pip install torchversion
 # [3] torch.nn >> Torch NeuralNetwork Module 
 
+
 import torch.nn as nn
 
 class NeuralNetwork(nn.Module):

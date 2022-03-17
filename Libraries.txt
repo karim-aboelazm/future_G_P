@@ -1,2 +1,10 @@
+----------------------------
+pip install pipwin
+pipwin install pyaudio
+-----------------------------
 pip install pyttsx3
 pip install speechrecognition
+pip install torch
+pip install nltk
+pip install json
+pip install requests
