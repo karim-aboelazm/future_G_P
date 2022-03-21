@@ -68,24 +68,35 @@ train_loader = DataLoader(dataset=ds,
                           num_workers=0)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+# --------------------------------------------------------------------
 model = NeuralNetwork(input_size,hiddin_size,output_size).to(device=device)
-criterion = nn.CrossEntropyLoss() # getting error 
+
+criterion = nn.CrossEntropyLoss() # getting error < Activation Function > 
+
 optimizer = torch.optim.Adam(model.parameters(),lr=lr)
+
 
 for epoch in range(number_epochs):
     for (words,labels) in train_loader:
         words = words.to(device)
         labels = labels.to(dtype = torch.long).to(device)
+
         outputs = model(words) 
+
         loss = criterion(outputs,labels)
-        optimizer.zero_grad()
+
+        optimizer.zero_grad() 
+
         loss.backward()
+
         optimizer.step()
 
     if (epoch+1) % 100 == 0:
         print(f"Epoch [{epoch+1} of {number_epochs}] , loss[{loss.item():.8f}]")
 
 print(f"Final Loss = [{loss.item():.8f}]")
+
+
 
 new_data = {
     "model_state":model.state_dict(),

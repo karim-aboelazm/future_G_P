@@ -9,6 +9,23 @@
             "tag":"bye",
             "patterns":["bye","shut","goodbye","see you later","sleep","exit"],
             "responses":["Bye","I am Going ..","Bye Sir","nice to meet you","see you later"]
-       }
+        },
+        {
+            "tag" : "time",
+            "patterns" : ["what time is now ?", "what is the time ?", "tell me time","time"],
+            "responses" : ["The time is "]
+
+        },
+        {
+            "tag" : "date",
+            "patterns" : ["what date is ?", "what is the date ?", "tell me date","date"],
+            "responses" : ["The date is "]
+        },
+        {
+            "tag" : "day",
+            "patterns" : ["what day is ?", "what is the day ?", "tell me day","day","today is"],
+            "responses" : ["The day is "]
+        }
+
    ] 
 }

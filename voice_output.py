@@ -10,6 +10,6 @@ def Say(text):
     # for i in range(len(voices)):
     #     print(f"Voice [{i}] id : {voices[i].id}")
     # print(len(voices))
-Say("hello")
+
 
 
