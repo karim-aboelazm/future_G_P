@@ -11,6 +11,16 @@
             "responses":["Bye","I am Going ..","Bye Sir","nice to meet you","see you later"]
         },
         {
+            "tag" : "health",
+            "patterns" : ["how are you", "how do you do", "are you fine ?","are you good"],
+            "responses" : ["fine." , "perfect", "cool","Are you Fine ? I'm Fine"]
+        },
+        {
+            "tag" : "identity",
+            "patterns" : ["your name", "what is your name", "who are you","whar are you"],
+            "responses" : ["Python Assistant" ,"An artificial intelligence assistant and my name is Python Assistant","My Name is Python Assistant","I am a voice assistant for you sir"]
+        },
+        {
             "tag" : "time",
             "patterns" : ["what time is now ?", "what is the time ?", "tell me time","time"],
             "responses" : ["The time is "]
@@ -25,6 +35,41 @@
             "tag" : "day",
             "patterns" : ["what day is ?", "what is the day ?", "tell me day","day","today is"],
             "responses" : ["The day is "]
+        },
+        {
+            "tag" : "wikipedia",
+            "patterns" : ["who is  ?", "about", "what is ","wikipedia","which is","What do you know about ?"],
+            "responses" : ["wikipedia"]
+        },
+        {
+            "tag" : "google",
+            "patterns" : ["google search", "search for", "searching for","search about","google","which is"],
+            "responses" : ["google"]
+        },
+        {
+            "tag" : "website",
+            "patterns" : ["open", "website","site"],
+            "responses" : ["website"]
+        },
+        {
+            "tag" : "playmusic",
+            "patterns" : ["play", "music","youtube music"],
+            "responses" : ["playmusic"]
+        },
+        {
+            "tag" : "temperature",
+            "patterns" : ["temperature","what is the temperature","temperature in","temperature for"],
+            "responses" : ["temperature"]
+        },
+        {
+            "tag" : "calculate",
+            "patterns" : ["calculate","plus","multiply","div on","power","minus","divide","in","into","+","-","/","x"],
+            "responses" : ["calculate"]
+        },
+        {
+            "tag" : "how",
+            "patterns" : ["How can I","how can I do", "how to"],  
+            "responses" : ["how"]
         }
 
    ] 

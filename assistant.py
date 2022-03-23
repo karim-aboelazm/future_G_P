@@ -39,7 +39,7 @@ def assistant():
     elif stm == None: #
         time.sleep(2)
         exit()
-    elif stm == "bye conda" or stm == "exit":
+    elif stm == "bye" or stm == "exit":
         exit()
     
     stm = tokenize(stm)
@@ -59,16 +59,35 @@ def assistant():
         for conn in contents["content"]:
             if tag == conn['tag']:
                 replay = random.choice(conn['responses'])
+                
                 if 'time' in replay:
                     get_command(replay)
                 elif 'date' in replay:
                     get_command(replay)
                 elif 'day' in replay:
                     get_command(replay)
+
+                elif "wikipedia" in replay:
+                    get_input_command(replay,result)
+                elif "google" in replay:
+                     get_input_command(replay,result)
+                elif "website" in replay:
+                     get_input_command(replay,result)
+                elif "playmusic" in replay:
+                     get_input_command(replay,result)
+                elif "calculate" in replay:
+                     get_input_command(replay,result)
+                elif "how" in replay:
+                     get_input_command(replay,result)
+                elif "temperature" in replay:
+                     get_input_command(replay,result)    
                 else:
                     Say(replay)
 
 
 while True:   
-    assistant()   
+    assistant()
+
+
+
     
