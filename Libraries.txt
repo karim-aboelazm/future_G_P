@@ -8,3 +8,9 @@ pip install torch
 pip install nltk
 pip install json
 pip install requests
+------------------------- < Today >
+pip install webbrowser
+pip install wikipedia
+pip install pywhatkit
+pip install pywikihow
+pip install wolframalpha
