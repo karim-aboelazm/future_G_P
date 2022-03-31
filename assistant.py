@@ -66,6 +66,24 @@ def assistant():
                     get_command(replay)
                 elif 'day' in replay:
                     get_command(replay)
+                elif 'nasa' in replay:
+                    get_command(replay)
+                elif 'speed' in replay:
+                    get_command(replay)
+                elif 'egyptian news' in replay:
+                    get_command(replay)
+                elif 'open word' in replay:
+                    get_command(replay)
+                elif 'open powerpoint' in replay:
+                    get_command(replay)
+                elif 'close word' in replay:
+                    get_command(replay)
+                elif 'close powerpoint' in replay:
+                    get_command(replay)
+                
+
+
+
 
                 elif "wikipedia" in replay:
                     get_input_command(replay,result)
@@ -74,20 +92,32 @@ def assistant():
                 elif "website" in replay:
                      get_input_command(replay,result)
                 elif "playmusic" in replay:
-                     get_input_command(replay,result)
+                    get_input_command(replay,result)
                 elif "calculate" in replay:
-                     get_input_command(replay,result)
+                    get_input_command(replay,result)
                 elif "how" in replay:
                      get_input_command(replay,result)
                 elif "temperature" in replay:
-                     get_input_command(replay,result)    
+                    get_input_command(replay,result) 
+                elif "weather" in replay:
+                    get_input_command(replay,result)
+                elif "recognize" in replay:
+                     get_input_command(replay,result)   
                 else:
                     Say(replay)
 
 
-while True:   
-    assistant()
+def Wakeup():
+    stm = Listen()
+    if str(stm) == "funny":
+       Say("yes I'm For You Sir ..")
+       while True:
+           assistant()
+    elif str(stm) == None:
+        Wakeup()
 
+while True:
+    Wakeup()
 
 
     

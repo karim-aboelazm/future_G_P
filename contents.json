@@ -21,6 +21,12 @@
             "responses" : ["Python Assistant" ,"An artificial intelligence assistant and my name is Python Assistant","My Name is Python Assistant","I am a voice assistant for you sir"]
         },
         {
+            "tag" : "recognize",
+            "patterns" : ["he is", "she is","I am","I'm"],
+            "responses":["recognize"]
+
+        },
+        {
             "tag" : "time",
             "patterns" : ["what time is now ?", "what is the time ?", "tell me time","time"],
             "responses" : ["The time is "]
@@ -70,6 +76,46 @@
             "tag" : "how",
             "patterns" : ["How can I","how can I do", "how to"],  
             "responses" : ["how"]
+        },
+        {
+            "tag" : "weather",
+            "patterns" : ["weather in","what is weather in","weather for","tell me the weather for","what is the weather for"],
+            "responses" : ["weather"]
+        },
+        {
+            "tag" : "nasa",
+            "patterns" : ["nasa","Nasa news", "news from Nasa","space news"],   
+            "responses" : ["nasa"]
+        },
+        {
+            "tag" : "speed",
+            "patterns" : ["what Internet speed ?", "Internet speed", "The Speed of internet","check The internet"],
+            "responses" : ["speed"]
+        },
+        {
+            "tag" : "egyptian news",
+            "patterns" : ["Egyptian news","Egy news","EG news","get news","our news","news of Egypt"],   
+            "responses" : ["egyptian news"]
+        },
+        {
+            "tag" : "open word",
+            "patterns" : ["open word file","word file","ms word","microsoft word","open word"],
+            "responses" : ["open word"]
+        },
+        {
+            "tag" : "close word",
+            "patterns" : ["close word","word close","close ms word","close microsoft word","shut word"],
+            "responses" : ["close word"]
+        },
+        {
+            "tag" : "open powerpoint",
+            "patterns" : ["open ppt file","powerpoint file","ms power","microsoft powerpoint","power file","open powerpoint"],
+            "responses" : ["open powerpoint"]
+        },
+        {
+            "tag" : "close powerpoint",
+            "patterns" : ["PowerPoint close","close PowerPoint","shutdown PowerPoint","shut ppt" , "close presentation"],
+            "responses" : ["close powerpoint"]
         }
 
    ] 
